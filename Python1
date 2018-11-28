@@ -1,0 +1,26 @@
+#A taxi driver is calculating their profit over two weeks by adding up the fares they charge and subtracting the cost of gas. 
+#The price of gas changes over time - it was $3.52/gallon the first week and $3.57/gallon this second week. 
+#Their car gets 20 miles per gallon.
+#For the first week the driver had a total of 23 passengers with average $29 fare each, and drove a total of 160 miles. 
+#For the second week they had 17 passengers with average $30 fare each, and drove a total of 220 miles. 
+#Assume that for both weeks they purchase all the gas needed during that week (i.e. they refuel every week to maintain a constant level of gas in the tank).
+#Based on the above, answer the following questions:
+#What is their total profit over both weeks
+#During which week was their average (mean) profit per passenger higher?
+
+Gal_1 = 3.52
+Gal_2= 3.57
+P_1 = 23
+Avg_1 = 29
+M_1 = 160
+P_2 = 17
+Avg_2 = 30
+M_2 = 220
+Mpg=20
+tprofit = (((P_1*Avg_1) - (M_1/Mpg *Gal_1)) + ((P_2*Avg_2)-(M_2/Mpg*Gal_2)))
+print(tprofit)
+Avgp_1 =(((P_1*Avg_1) - (M_1/Mpg *Gal_1))/P_1)
+Avgp_2 =(((P_2*Avg_2)-(M_2/Mpg*Gal_2))/P_2)
+if Avgp_1 > Avgp_2:print("The average profit per passenger was higher in the first week")
+elif Avgp_1<Avgp_2: print("The average profit per passenger was higher in the second week")
+else:print("The average profit per passenger was equivalent during both weeks")
