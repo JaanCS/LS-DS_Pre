@@ -1,0 +1,7 @@
+#A cash drawer contains 160 bills, all 10s and 50s
+#The total value of the 10s and 50s is $1,760
+#How many of each type of bill are in the drawe
+
+total= 1760
+x = 10
+y = 50
