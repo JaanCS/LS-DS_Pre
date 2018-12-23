@@ -1,0 +1,22 @@
+# A cash drawer contains 160 bills, all 10s and 50s
+# The total value of the 10s and 50s is $1,760
+# How many of each type of bill are in the drawer
+
+total_cash = 1760
+t_bills = 160
+
+for num_10 in range(0, ((total_cash // 10)+1)):
+    for num_50 in range(0, ((total_cash // 50)+1)):
+        total10 = num_10
+        total50 = num_50
+        if total10 + total50 != t_bills:
+            continue
+        if (total10 * 10) + (total50 * 50) != total_cash:
+            continue
+        print("Answer found")
+        print(
+            f"The amount of $10 bills is {num_10} and the amount of $50 bills is {num_50} ")
+        break
+    else:
+        continue
+    break
